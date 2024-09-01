@@ -6,7 +6,7 @@ import "./index.scss"
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <Router>
+        <Router basename="/Portfolio-client/">
         <Routes>
             <Route path="/" element={<Landing/>}/>
         </Routes>
