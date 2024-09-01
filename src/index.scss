@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+    --black: #0A0A0A; 
+    --smooth-black: #0d0d0d;
+    --pink: #FF007F; 
+    --turquoise: #00F7F7;
+    --fluo-yellow: #EFFF00;
+
+    --primary-font: "Lato", sans-serif;
+    --secondary-font: "Orbitron", sans-serif;
+    --third-font: "Permanent Marker", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+    font-family: var(--primary-font);
+}
+
+body {
+    min-width: 320px;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(/images/texture.png);
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+a {
+    color: inherit;
+}
+
+li {
+    list-style: none;
+    user-select: none;
+}

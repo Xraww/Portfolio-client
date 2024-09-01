@@ -1,0 +1,80 @@
+header {
+    position: fixed;
+    display: none;
+    width: 100%;
+    z-index: 10;
+    padding: 10px;
+
+    background-color: var(--black);
+    background-image: url("/images/texture.png");
+    color: white;
+
+    #hamburger {
+        font-size: 24px;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.BurgerMenu {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+
+    background-color: var(--black);
+    background-image: url("/images/texture.png");
+    color: var(--turquoise);
+    border-right: 1px solid var(--pink);
+    border-bottom: 1px solid var(--pink);
+    border-bottom-right-radius: 10px;
+    
+    padding: 20px;
+    z-index: 100;
+
+    transform: translateX(-100%);
+    opacity: 0; 
+    visibility: hidden; 
+    transition: transform 1s ease, opacity 0.5s ease, visibility 0.5s ease;
+
+    nav {
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            height: 80%;
+            margin-top: 15px;
+
+            .selected {
+                border-bottom: 2px solid var(--pink);
+            }
+
+            li {
+                padding-bottom: 5px;
+                font-family: var(--secondary-font);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .title a {
+            font-size: 24px;
+        }
+    }
+
+    .BurgerMenu.active {
+        transform: translateX(0); 
+        opacity: 1; 
+        visibility: visible; 
+    }
+}

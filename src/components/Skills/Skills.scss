@@ -1,0 +1,207 @@
+#skills {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+    padding: 50px;
+    background-color: var(--black);
+    background-image: url("/images/texture.png");
+    color: white;
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        h2 {
+            font-size: 32px;
+            font-family: var(--secondary-font);
+        }
+
+        .skills-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+
+            .skill-item {
+                position: relative;
+                width: 30%;
+                height: 100px;
+                background-color: var(--smooth-black);
+                border-radius: 10px;
+
+                .percent {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    padding: 5px;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 100%;
+                    padding: 10px;
+
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 20px;
+                        }
+
+                        .skill-icon {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .progress-bar {
+                        width: 100%;
+                        background-color: white;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        height: 8px;
+
+                        .progress {
+                            background-color: var(--pink);
+                            height: 100%;
+                            border-radius: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .additional-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        h3 {
+            font-size: 32px;
+            font-family: var(--secondary-font);
+        }
+
+        .technologies-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 90%;
+
+            .technology-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                text-align: center;
+                flex: 1 1 calc(30% - 15px);
+
+                .ball {
+                    width: 10px; 
+                    height: 10px; 
+                    background-color: var(--pink); 
+                    border-radius: 50%;
+                }
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    #skills {
+        padding: 15px 0 0 0;
+
+        .additional-skills {
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 965px) {
+    #skills .skills {
+        .skills-list .skill-item {
+            .percent {
+                padding: 3px;
+                font-size: 12px;
+            }
+
+            .content .top {
+                .skill-icon {
+                    font-size: 16px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    #skills {
+        .skills {
+            h2 {
+                text-align: center;
+            }
+
+            .skills-list .skill-item {
+                height: 60px;
+                width: calc(50% - 15px);
+
+                .content {
+                    justify-content: flex-end;
+                    gap: 10px;
+
+                    .top {
+                        .skill-icon {
+                            font-size: 12px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .additional-skills {
+            gap: 20px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .technologies-list {
+                gap: 10px;
+
+                .technology-item {
+                    flex: 1 1 calc(50% - 10px);
+                    gap: 5px;
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
