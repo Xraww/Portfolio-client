@@ -7,6 +7,12 @@ import { faHandPointer, faXmark, faChevronLeft, faChevronRight } from "@fortawes
 
 import "./Projects.scss"
 
+import p1 from "/images/project-1.png"
+import p2 from "/images/project-2.png"
+import p3 from "/images/project-3.png"
+import p4 from "/images/project-4.png"
+import p5 from "/images/project-5.png"
+
 function Projects() {
     const parallax = useRef(null);
 
@@ -103,12 +109,12 @@ function Projects() {
 
             <div className="parallax">
                 <Parallax pages={5} ref={parallax} horizontal>
-                    {createParallaxLayer(0, "Booki", "/Portfolio-client/../../../public/images/project-1.png", "https://github.com/Xraww/Booki", 4, 1)}
-                    {createParallaxLayer(1, "Sophie Bluel | Portfolio", "/Portfolio-client/../../../public/images/project-2.png", "https://github.com/Xraww/Architecte", 0, 2)}
-                    {createParallaxLayer(2, "Kasa Location", "/Portfolio-client/../../../public/images/project-3.png", "https://github.com/Xraww/Kasa", 1, 3)}
+                    {createParallaxLayer(0, "Booki", p1, "https://github.com/Xraww/Booki", 4, 1)}
+                    {createParallaxLayer(1, "Sophie Bluel | Portfolio", p2, "https://github.com/Xraww/Architecte", 0, 2)}
+                    {createParallaxLayer(2, "Kasa Location", p3, "https://github.com/Xraww/Kasa", 1, 3)}
 
-                    {createParallaxLayer(3, "Mon vieux grimoire", "/Portfolio-client/../../../public/images/project-4.png", "https://github.com/Xraww/Grimoire", 2, 4)}
-                    {createParallaxLayer(4, "Nina Carducci | Portfolio", "/Portfolio-client/../../../public/images/project-5.png", "https://github.com/Xraww/Photographer", 3, 0)}
+                    {createParallaxLayer(3, "Mon vieux grimoire", p4, "https://github.com/Xraww/Grimoire", 2, 4)}
+                    {createParallaxLayer(4, "Nina Carducci | Portfolio", p5, "https://github.com/Xraww/Photographer", 3, 0)}
                 </Parallax>
             </div>
         </div>
