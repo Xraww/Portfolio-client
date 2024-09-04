@@ -57,7 +57,7 @@ function Contact() {
             
             <footer>
                 <div className="top">
-                    <button><FontAwesomeIcon icon={faDownload}/>Télécharger mon cv</button>
+                    {/* <button><FontAwesomeIcon icon={faDownload}/>Télécharger mon cv</button> */}
 
                     <div className="icons-container">
                         <div className="line"></div>
