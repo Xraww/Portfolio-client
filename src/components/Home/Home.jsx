@@ -25,7 +25,7 @@ function Home({ scrollToSection }) {
                     </div>
 
                     <div className="buttons">
-                        <button className="btn btn-text">Recruter moi</button>
+                        <button className="btn btn-text">Recrutez moi</button>
                         <button className="btn btn-text" onClick={() => scrollToSection(3)}>Contacter</button>
                         <a href="https://www.linkedin.com/" className="btn btn-icons" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
                         <a href="https://github.com/Xraww" className="btn btn-icons" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
